@@ -69,6 +69,7 @@ revel test shuttle
 
 ## Todo list
 - auto install
+- conditional analytics inclusion
 - dissociate webpack environments
 - Mobile application and|or web view
 - Command line
