@@ -1,0 +1,11 @@
+test-results/
+tmp/
+routes/
+/.idea/
+shuttle.sqlite3
+/dist/
+/node_modules/
+/.cache/
+/log/
+shuttle.tar.gz
+.env

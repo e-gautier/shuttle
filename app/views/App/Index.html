@@ -1,0 +1,57 @@
+{{set . "title" "Shuttle"}}
+{{set . "RCaptchaStatus" .RCaptchaStatus}}
+{{template "header.html" .}}
+
+<div id="particles-js" style="top: 0"></div>
+<div id="container">
+    <div class="text-center">
+        <h1>Shuttle</h1>
+        <div style="font-size:3em; color: #D7FF00">
+            <i class="fas fa-space-shuttle"></i>
+        </div>
+        <h2>URL shortener</h2>
+        <small>Past an URL, share an alias</small>
+    </div>
+    <div class="row">
+        <div class="span6">
+        {{template "flash.html" .}}
+        </div>
+    </div>
+    <form action="/" method="POST" class="text-center" id="link-form">
+        <div class="g-recaptcha"
+             data-sitekey="{{ .RCaptchaKey }}"
+             data-callback="onSubmitWithCaptcha"
+             data-size="invisible">
+        </div>
+        <div class="input-group input-group">
+        {{with $field := field "url" .}}
+            <input
+                    type="url"
+                    name="{{$field.Name}}"
+                    value="{{$field.Flash}}"
+                    class="form-control col-md-11"
+                    placeholder="https://..."
+                    id="urlInput"
+                    autofocus
+                    required
+            />
+        {{end}}
+            <div class="input-group-append">
+                <button
+                        value="shorten"
+                        class="btn btn-outline-light"
+                        id="shortenButton"
+                >
+                    <span style="font-size:1em; color: #D7FF00;">
+                        <i class="fas fa-link" id="fa-link" style="visibility:visible;"></i>
+                        <i class="fas fa-cog fa-spin" id="fa-cog" style="visibility:hidden;"></i>
+                    </span>
+                    <span style="margin: 7%">shorten</span>
+                </button>
+            </div>
+        </div>
+        <div id="validation-container"></div>
+    </form>
+</div>
+
+{{template "footer.html" .}}

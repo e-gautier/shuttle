@@ -1,0 +1,32 @@
+{
+  "name": "shuttle",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "git@bitbucket.org:Umbonia/go-link-shortener.git",
+  "author": "Etienne GAUTIER",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.2",
+    "@fortawesome/fontawesome-free-brands": "^5.0.4",
+    "@fortawesome/fontawesome-free-regular": "^5.0.4",
+    "@fortawesome/fontawesome-free-solid": "^5.0.4",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "4.0.0-beta.3",
+    "jquery": "^3.2.1",
+    "particles.js": "^2.0.0",
+    "popper.js": "^1.12.9",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-minifier-loader": "^1.4.0",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1"
+  }
+}
