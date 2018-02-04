@@ -3,7 +3,7 @@ An url shortener written in Go.
 
 Demo: https://shr.space/
 
-![screenshot](public/img/Screenshot-2018-2-3 Shuttle.png)
+![screenshot](public/img/Screenshot-2018-2-3_Shuttle.png)
 
 ## RCaptcha
 In order to prevent bot abuse or spam Shuttle come with RCaptcha support,
